@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>EscPos</RootNamespace>
+    <AssemblyName>EscPos</AssemblyName>
+    <Version>1.0.0</Version>
+    <Authors>Softechies Solutions</Authors>
+    <Description>Build and print ESC/POS receipts from .NET: text layout, columns, barcodes, QR codes, logos, cash drawer and cut, over network, Windows printers or device files.</Description>
+    <PackageId>Softechies.EscPos</PackageId>
+    <PackageTags>escpos;receipt;thermal-printer;pos;qr;barcode;epson</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/softechies/dotnet-escpos-printer</RepositoryUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="EscPos.Tests" />
+  </ItemGroup>
+
+</Project>

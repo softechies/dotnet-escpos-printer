@@ -1,0 +1,18 @@
+## .NET
+bin/
+obj/
+publish/
+*.user
+*.suo
+.vs/
+.vscode/
+.idea/
+TestResults/
+*.nupkg
+
+## Sample output
+*.bin
+receipt-preview.txt
+
+# macOS
+.DS_Store
