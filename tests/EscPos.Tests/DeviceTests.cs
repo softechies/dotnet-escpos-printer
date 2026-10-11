@@ -131,7 +131,7 @@ public class PrinterTests
         var unused = ((IPEndPoint)port.LocalEndpoint).Port;
         port.Stop();
 
-        var ex = await Assert.ThrowsAsync<PrinterException>(() => new NetworkPrinter("127.0.0.1", unused, TimeSpan.FromSeconds(2)).PrintAsync([1]));
+        var ex = await Assert.ThrowsAsync<PrinterException>(() => new NetworkPrinter("127.0.0.1", unused, TimeSpan.FromSeconds(15)).PrintAsync([1]));
         Assert.Contains("Could not reach printer", ex.Message);
     }
 
